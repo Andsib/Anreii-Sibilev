@@ -1,0 +1,120 @@
+.footer {
+    width: 100%;
+    background-color: $head;
+    padding: 20px 50px;
+    @include flex (flex, center, space-around);
+    color: white;
+}
+.job_prof {
+    font-size: 22px;
+    margin-right: 10px;
+}
+.job_name {
+    font-family: $second;
+    font-size: 24px;
+}
+.footer_item {
+    font-family: $second;
+    font-size: 20px;
+    &:hover {
+        color: $grey;
+    }
+    &:active {
+        color: $black;
+    }
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+.footer_list {
+    margin-bottom: 0;
+}
+.contacts_item__footer {
+    @include flex (flex, center, none);
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    &_phone {
+        background-image: url('../img/smartphone-call.svg');
+    }
+    &_city {
+        background-image: url('../img/maps-and-flags.png');
+    }
+    &_mail {
+        background-image: url('../img/mail.png');
+    }
+    &_insta {
+        width: 100%;
+        background-image: url('../img/instagram.png');
+        background-position-x: left;
+        padding-left: 30px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+            text-decoration: underline;
+            color: white;
+            background-image: url('../img/instagram_colour.png');
+        }
+        &:active {
+            color: $grey;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 825px) {
+    .contacts__footer {
+        @include flex (flex, center, center);
+    }
+    .contacts_item__footer:first-child {
+        margin-top: 10px;
+    }
+    .contacts_item__footer {
+        margin: 10px;
+    }
+    .footer_job {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 743px) {
+    .footer {
+        padding: 5px 15px;
+    }
+    .contacts__footer {
+        @include flex (flex, center, space-between);
+    }
+    .job_name {
+        display: block;
+    }
+}
+@media screen and (max-width: 615px) {
+    .contacts_item__footer {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .contacts__footer {
+        @include flex (flex, center, start);
+    }
+    .footer_job {
+        display: none;
+    }
+}
+@media screen and (max-width: 345px) {
+    .contacts__footer {
+        margin: 0;
+    }
+    .list_item__footer {
+        font-size: 18px;
+    }
+}

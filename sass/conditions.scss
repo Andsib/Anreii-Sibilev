@@ -1,0 +1,92 @@
+.conditions_wrap {
+    padding: 20px;
+}
+.conditionals {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: $head;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.conditions_prices {
+    @include flex (flex, baseline, space-between);
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: $pear;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: $second;
+    font-size: 22px;
+}
+.conditions_prices_text {
+    font-family: $second;
+    margin: 0 10px;
+}
+.conditionList {
+    padding: 15px;
+    background-color: $blue;
+    color: $black;
+    border-radius: 10px;
+    border: 1px solid $black;
+}
+.conditions {
+    font-size: 18px;
+    padding: 10px;
+    &:first-child {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+}
+.conditions_call {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    background-color: $head;
+}
+
+@media screen and (max-width: 880px) {
+    .conditionals {
+        font-size: 16px;
+    }
+    .conditions {
+        font-size: 16px;
+    }
+    .conditions_call {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .conditions_prices {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 565px) {
+    .conditions_prices {
+        flex-direction: column;
+    }
+    .conditions {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .conditionals {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .conditions_prices {
+        padding: 10px;
+    }
+    .conditions {
+        font-size: 14px;
+    }
+    .conditions_call {
+        font-size: 14px;
+    }
+}

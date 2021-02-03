@@ -1,0 +1,80 @@
+.feedback_title {
+    font-size: 20px;
+    text-align: center;
+    background-color: $head;
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: white;
+}
+.feedback_board {
+    width: 100%;
+    @include flex (flex, center, space-evenly);
+    flex-wrap: wrap;
+}
+.feedback_box {
+    display: block;
+    margin-top: 20px;
+    width: 40%;
+    height: 300px;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $grey;
+    &:nth-child(2) {
+        background-color: $pear;
+    }
+    &:nth-child(3) {
+        background-color: $head;
+    }
+}
+.iana {
+    background-image: url('../img/massages/1.jpg');
+}
+.karina {
+    background-image: url('../img/massages/2.jpg');
+}
+.olga {
+    background-image: url('../img/massages/3.jpg');
+}
+
+@media screen and (max-width: 1607px) {
+    .feedback_box {
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .feedback_box {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .feedback_wrapper {
+        padding: 10px;
+    }
+    .feedback_box {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .feedback_board {
+        flex-direction: column;
+    }
+    .feedback_box {
+        width: 80%;
+        height: 220px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .feedback_title {
+        font-size: 16px;
+        width: auto;
+    }
+    .feedback_box {
+        width: 90%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,55 @@
+.main {
+    width: 100%;
+    padding: 20px;
+    background-image: url('../img/london-taste-of-england-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid $head;
+    @include flex (flex, center, center);
+}
+.sliderBox {
+    @include flex (flex, center, center);
+    width: 800px;
+    height: 580px;
+    border: 20px solid $head;
+    border-radius: 20px;
+}
+.slider  {
+    @include flex (flex, center, center);
+    height: 560px;
+}
+
+@media screen and (max-width: 820px) {
+    .sliderBox {
+        height: 500px;
+    }
+    .slider {
+        height: 480px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .sliderBox {
+        height: 400px;
+    }
+    .slider {
+        height: 370px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .sliderBox {
+        height: 300px;
+    }
+    .slider {
+        height: 280px;
+    }
+}
+@media screen and (max-width: 445px) {
+    .sliderBox {
+        height: 250px;
+        border: 10px solid $head;
+    }
+    .slider {
+        height: 230px;
+    }
+}

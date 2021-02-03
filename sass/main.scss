@@ -1,0 +1,22 @@
+@import './mixin.scss';
+@import './fonts.scss';
+@import './colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    font-family: $main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import './header.scss';
+@import './main_page.scss';
+@import './aboutMe.scss';
+@import './conditions.scss';
+@import './materials.scss';
+@import './feedback.scss';
+@import './footer.scss';
