@@ -37,4 +37,7 @@ function createFeedback() {
 
     const feedbackBox3 = document.createElement('div');
     createFeedbackBox(feedbackBoard, feedbackBox3, 'feedback_box olga');
+
+    const feedbackBox4 = document.createElement('div');
+    createFeedbackBox(feedbackBoard, feedbackBox4, 'feedback_box sonya');
 }

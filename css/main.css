@@ -597,6 +597,10 @@
   background-image: url("../img/massages/3.jpg");
 }
 
+.sonya {
+  background-image: url("../img/massages/4.jpg");
+}
+
 @media screen and (max-width: 1607px) {
   .feedback_box {
     background-size: contain;
