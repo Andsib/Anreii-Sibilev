@@ -16,6 +16,8 @@
 .footer_item {
     font-family: $second;
     font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
     &:hover {
         color: $grey;
     }

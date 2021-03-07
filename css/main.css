@@ -664,6 +664,8 @@
 .footer_item {
   font-family: "Caveat", cursive;
   font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .footer_item:hover {
   color: #C9D1D3;
