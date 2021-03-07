@@ -79,6 +79,10 @@
   color: #d79066;
 }
 
+.list_item_active {
+  color: #d79066;
+}
+
 .list_link {
   font-size: 18px;
 }

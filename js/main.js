@@ -18,39 +18,71 @@ mainPage.addEventListener('click', function () {
 aboutMe.addEventListener('click', function () {
     main.innerHTML = '';
     createAboutMe();
+    aboutMe.classList.add('list_item_active');
+    condition.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 aboutMeFooter.addEventListener('click', function () {
     main.innerHTML = '';
     createAboutMe();
+    aboutMe.classList.add('list_item_active');
+    condition.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 condition.addEventListener('click', function () {
     main.innerHTML = '';
     createConditions();
+    condition.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 conditionFooter.addEventListener('click', function () {
     main.innerHTML = '';
     createConditions();
+    condition.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 materials.addEventListener('click', function () {
     main.innerHTML = '';
     createMaterials();
+    materials.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    condition.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 materialsFooter.addEventListener('click', function () {
     main.innerHTML = '';
     createMaterials();
+    materials.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    condition.classList.remove('list_item_active');
+    feedback.classList.remove('list_item_active');
 })
 
 feedback.addEventListener('click', function () {
     main.innerHTML = '';
     createFeedback();
+    feedback.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    condition.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
 })
 
 feedbackFooter.addEventListener('click', function () {
     main.innerHTML = '';
     createFeedback();
+    feedback.classList.add('list_item_active');
+    aboutMe.classList.remove('list_item_active');
+    condition.classList.remove('list_item_active');
+    materials.classList.remove('list_item_active');
 })
